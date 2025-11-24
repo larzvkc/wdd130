@@ -40,11 +40,12 @@ aside{
 aside img{
     width: 200px;
     height: auto;
-    border: none;
+    
 }
 
 footer{
     margin-top: 1vmin;
     border-top: 2px double black;
     text-align: center;
+
 }
