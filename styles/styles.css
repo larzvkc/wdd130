@@ -1,11 +1,18 @@
 :root{
     --darkBlue: darkblue;
+    --khaki: khaki;
     --base100: 100px;
     --vminBase: 1vmin;
 }
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 nav{
-    background-color: darkblue;
+    background-color: var(--darkBlue);
     padding: calc(var(--base100)/ 10);
 }
 
@@ -25,6 +32,7 @@ main img{
     border: 1px solid black;
     padding: calc(var(--base100)/ 50);
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p{
@@ -36,11 +44,15 @@ main{
 
 aside{
     width: 80%;
-    margin: calc(var(--vminBase) * 2);
     border: 5px inset purple;
-    padding: calc(var(--vminBase) * 2);
-    background-color: khaki;
-    color: darkslategrey
+    position: relative;
+}
+
+aside h2{
+    position: absolute;
+    left:15%;
+    top: 10%;
+
 }
 
 aside img{
@@ -54,4 +66,19 @@ footer{
     border-top: 2px double black;
     text-align: center;
 
+}
+
+
+
+/* Class Selectors */
+
+a, a:visited,.box{
+    color: var(--khaki);
+}
+
+.box{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: black;
+    /* color set above! */
 }
